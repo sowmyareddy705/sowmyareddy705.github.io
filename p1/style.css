@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+}
+.container{
+    margin:auto;
+    width: 100%;
+
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(228, 252, 16);
+    color:rgb(7, 7, 7);
+    padding: 10px;
+}
+li{
+    display: inline-block;
+    font-size: 20px;
+    padding:5px;
+}
