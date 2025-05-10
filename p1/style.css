@@ -108,7 +108,7 @@ nav a:hover {
 }
 
 #projects {
-  background-color: #e0e0e0;
+  background-color:#e0d0a9;
   padding: 40px 20px;
 }
 
@@ -181,11 +181,11 @@ nav a:hover {
 }
 
 #services {
-    background-color: #f8b729; /* light blue */
+    background-color: #e0d0a9; /* light blue */
 }
 
 #about {
-    background-color: #dddcdc; /* light green */
+    background-color: #e0d0a9; /* light green */
 }
 
 #contact {
