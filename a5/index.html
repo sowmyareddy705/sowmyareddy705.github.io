@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MERN Stack Developer</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+    }
+
+    .title {
+      white-space: nowrap; /* Keep it in one line */
+      font-weight: bold;
+      font-family: Arial, sans-serif;
+      transition: all 0.3s ease;
+    }
+
+    /* Default (desktop/laptop) */
+    .title {
+      font-size: 48px;
+      color: #1a1a1a; /* Dark gray */
+    }
+
+    /* Tablets: max-width 1024px */
+    @media (max-width: 1024px) {
+      .title {
+        font-size: 36px;
+        color: #007acc; /* Blue */
+      }
+    }
+
+    /* Phones: max-width 767px */
+    @media (max-width: 767px) {
+      .title {
+        font-size: 24px;
+        color: #e63946; /* Red */
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="title">MERN Stack Developer</div>
+</body>
+</html>
