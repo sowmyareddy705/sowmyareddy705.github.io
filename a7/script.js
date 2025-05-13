@@ -1,10 +1,18 @@
+function validateInput(input) {
+  if (input.value === "" || isNaN(input.value)) {
+    input.style.border = "2px solid red";
+  } else {
+    input.style.border = "1px solid #ccc";
+  }
+}
+
 function calculate() {
   const num1 = parseFloat(document.getElementById("num1").value);
   const num2 = parseFloat(document.getElementById("num2").value);
   const resultsDiv = document.getElementById("results");
 
   if (isNaN(num1) || isNaN(num2)) {
-    resultsDiv.innerHTML = "<p>Please enter valid numbers.</p>";
+    resultsDiv.innerHTML = "<p style='color:red;'>Please enter valid numbers in both fields.</p>";
     return;
   }
 

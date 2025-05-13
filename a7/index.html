@@ -3,19 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Math Operations</title>
+  <title>HEY CALCUU</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
-    <h1>HEY CALCULATOR !</h1>
+    <div class="calculator">
+      <div class="input-area">
+        <h2>HEY!! CALCU</h2>
+        <input type="number" id="num1" placeholder="First number" step="any" oninput="validateInput(this)" />
+        <input type="number" id="num2" placeholder="Second number" step="any" oninput="validateInput(this)" />
+        <button onclick="calculate()">Submit</button>
 
-    <input type="number" id="num1" placeholder="Enter first number" step="any" oninput="validateInput(this)" />
-    <input type="number" id="num2" placeholder="Enter second number" step="any" oninput="validateInput(this)" />
-
-    <button onclick="calculate()">SUBMIT</button>
-
-    <div class="results" id="results"></div>
+        <div id="results"></div>
+      </div>
+    </div>
   </div>
 
   <script src="script.js"></script>

@@ -1,58 +1,78 @@
+/* Body: Blue background */
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(to right, #7cb6c0, #4bb8eb);
-  height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #9bc5d6; /* Blue background */
+  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0;
+  height: 100vh;
 }
 
 .container {
-  background: white;
-  padding: 30px 40px;
-  border-radius: 12px;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-  text-align: center;
-  width: 300px;
+  width: 500px;
+  padding: 20px;
+  background-color: white; /* White background for the calculator */
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
-  margin-bottom: 20px;
+.calculator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-area {
+  width: 100%;
+}
+
+h2 {
   color: #333;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
 
+/* Remove spinner arrows */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-
 input[type=number] {
   -moz-appearance: textfield;
 }
 
 button {
+  padding: 10px 20px;
   width: 100%;
-  padding: 12px;
-  background-color: #34b0e0;
+  background-color: #5584aa; 
   color: white;
   font-size: 16px;
   border: none;
-  border-radius: 8px;
+  border-radius: 4px;
   cursor: pointer;
-  margin-top: 10px;
 }
 
 button:hover {
-  background-color: #5ec6d8;
+  background-color: #67828d;
 }
 
-.results {
+
+#results {
   margin-top: 20px;
-  text-align: left;
+  font-size: 18px;
   color: #333;
-  font-size: 16px;
+  text-align: center;
 }
