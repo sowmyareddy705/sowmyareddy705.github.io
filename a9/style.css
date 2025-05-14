@@ -1,0 +1,51 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 20px;
+}
+
+.box {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 250px;
+  padding: 20px;
+}
+
+input[type="text"] {
+  width: 90%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.element-list {
+  margin-top: 30px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+#result-box {
+  margin-top: 20px;
+  font-size: 22px;
+  font-weight: bold;
+}

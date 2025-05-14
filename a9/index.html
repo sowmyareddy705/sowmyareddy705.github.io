@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fruit Search</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1><b>FRUIT SEARCH</b></h1>
+
+  <div class="container">
+    <div class="box">
+      <h2>Fruit</h2>
+      <input type="text" id="fruit-input" placeholder="Enter fruit name">
+    </div>
+
+    <div class="box">
+      <h2>click here !</h2>
+      <button onclick="searchFruit()">Search</button>
+    </div>
+  </div>
+
+  <div class="element-list">
+    <h3>Available Fruits:</h3>
+    <ul id="fruit-elements">
+      <li>Apple</li>
+      <li>Orange</li>
+      <li>Banana</li>
+      <li>Berries</li>
+      <li>Pineapple</li>
+      <li>Grapes</li>
+    </ul>
+  </div>
+
+  <div id="result-box"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
