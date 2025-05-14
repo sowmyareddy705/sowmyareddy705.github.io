@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: #fff;
+  color: #333;
+}
+
+header {
+  background: #f8f8f8;
+  padding: 1rem 2rem;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #f4b400;
+}
+
+.logo span {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.search {
+  flex: 1;
+  margin: 0 2rem;
+  display: flex;
+}
+
+.search input {
+  padding: 0.5rem;
+  flex: 1;
+  border: 1px solid #ccc;
+  border-left: none;
+}
+
+.search select {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  background: #fff;
+}
+
+.support-cart span {
+  margin-left: 1rem;
+  font-size: 0.9rem;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0.5rem 0;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+nav ul li {
+  margin-right: 1.5rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #e9f1f7;
+  padding: 2rem;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text h4 {
+  color: #f4b400;
+  font-weight: 600;
+}
+
+.hero-text h1 {
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+.hero-text p {
+  margin-bottom: 1.5rem;
+}
+
+.hero-text button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+}
+
+.hero-image img {
+  max-width: 250px;
+}
+
+.categories,
+.brands,
+.trending {
+  padding: 2rem;
+}
+
+.category-list,
+.brand-list,
+.product-grid {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.category-item,
+.brand-item,
+.product-card {
+  padding: 1rem;
+  border: 1px solid #ddd;
+  background: #fff;
+  width: 200px;
+  text-align: center;
+}
+
+footer {
+  background: #f8f8f8;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+.footer-cols {
+  display: flex;
+  gap: 2rem;
+}
+
+.footer-col h4 {
+  margin-bottom: 1rem;
+}
+
+.footer-col ul {
+  list-style: none;
+}
+
+.footer-col ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-col input[type="email"] {
+  padding: 0.5rem;
+  width: 80%;
+  margin-top: 0.5rem;
+}
+
+.footer-col button {
+ background-color: #777;
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.button:hover{
+    background-color: aliceblue;
+}
+ 
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #777;
+}
