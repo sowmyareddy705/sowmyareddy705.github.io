@@ -8,7 +8,7 @@ function searchFruit() {
 
   if (result.length > 0) {
     resultBox.textContent = "Result: " + result[0];
-    resultBox.style.color = "green";
+    resultBox.style.color = "black";
   } else {
     resultBox.textContent = "Result: Not Available";
     resultBox.style.color = "red";
