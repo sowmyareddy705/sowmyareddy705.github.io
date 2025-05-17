@@ -1,17 +1,17 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
+    background-color: #93e297;
     color: #333;
     margin: 40px;
 }
 
 h1 {
-    color: #031527;
+    color: #0b0c0c;
     text-align: center;
 }
 
 h2 {
-    color: #078fe9;
+    color: #1e6808;
     text-align: center;
     font-weight: normal;
 }
@@ -30,13 +30,13 @@ li {
 }
 
 a {
-    color: #071ff1;
+    color: #25b625;
     text-decoration: none;
     transition: color 0.2s ease-in-out;
 }
 
 a:hover {
-    color: #00b368;
+    color: #7ef051;
     text-decoration: underline;
 }
 
