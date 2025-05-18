@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: linear-gradient(to right, #6b6d6b, #7a8a75);
+  background: linear-gradient(to right, #747b7c, #6d838a);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
   height: 100vh;
@@ -18,11 +18,11 @@ body {
 }
 
 h1 {
-  color: #7fdb76;
+  color: #00796b;
   margin-bottom: 15px;
 }
 
 p {
   font-size: 18px;
-  color: #1f1e1e;
+  color: #333333;
 }

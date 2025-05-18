@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: linear-gradient(to right, #6b6d6b, #7a8a75);
+  background: linear-gradient(to right, #757a7a, #7c7979);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
   height: 100vh;
@@ -14,15 +14,15 @@ body {
   background-color: #ffffff;
   padding: 40px;
   border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 15px rgba(41, 38, 38, 0.1);
 }
 
 h1 {
-  color: #7fdb76;
+  color: #879997;
   margin-bottom: 15px;
 }
 
 p {
-  font-size: 18px;
-  color: #1f1e1e;
+  font-size:18px;
+  color: #333333;
 }
