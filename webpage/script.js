@@ -48,7 +48,7 @@ const showProducts = () => {
 const addToCart = (id, silent = false) => {
   cart[id] = (cart[id] || 0) + 1;
   if (!silent) {
-    notify("Added to your cart.");
+    notify("Added to your cart");
   }
   if (silent) dispCart(); 
 };
@@ -63,7 +63,7 @@ const removeFromCart = (id) => {
 
 const dispCart = () => {
   const root = document.getElementById("root");
-  root.innerHTML = "<h2>Your Cart</h2>";
+  root.innerHTML = "<h2>‪‪❤︎‬ Your Cart</h2>";
 
   if (Object.keys(cart).length === 0) {
     root.innerHTML += "<p>Your cart is empty.</p>";
