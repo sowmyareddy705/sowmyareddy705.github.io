@@ -25,21 +25,34 @@
     <div id="result"></div>
   </div>
 
-  <div class="atm-card hidden" id="transaction-area">
-    <h2 id="welcome-msg"></h2>
-    <p>Current Balance: $<span id="balance"></span></p>
+<div class="atm-card hidden" id="transaction-area">
+  <h2 id="welcome-msg"></h2>
+  <p>Current Balance: $<span id="balance"></span></p>
 
-    <div class="input-group">
-      <label for="amount">Enter Amount</label>
-      <input type="number" id="amount" placeholder="0" />
-    </div>
-
-    <button onclick="deposit()">Deposit</button>
-    <button onclick="withdraw()">Withdraw</button>
-    <button onclick="logout()" style="background-color: red;">Exit</button>
-    
-    <div id="transaction-result"></div>
+  <div class="input-group">
+    <label for="amount">Enter Amount</label>
+    <input type="number" id="amount" placeholder="0" />
   </div>
+
+  <button onclick="deposit()">Deposit</button>
+  <button onclick="withdraw()">Withdraw</button>
+
+  <hr />
+  <div class="input-group">
+    <label for="transfer-card">Transfer To (Card Number)</label>
+    <input type="text" id="transfer-card" placeholder="Recipient card number" />
+  </div>
+  <div class="input-group">
+    <label for="transfer-amount">Transfer Amount</label>
+    <input type="number" id="transfer-amount" placeholder="0" />
+  </div>
+  <button onclick="transfer()">Transfer</button>
+
+  <button onclick="logout()" style="background-color: red;">Exit</button>
+
+  <div id="transaction-result"></div>
+</div>
+
 
   <script src="index.js"></script>
 </body>

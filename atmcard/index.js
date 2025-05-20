@@ -47,7 +47,7 @@ function deposit() {
   currentUser.balance += amount;
   updateBalance();
   result.style.color = "green";
-  result.textContent = `Successfully deposited $${amount.toFixed(2)}.`;
+  result.textContent = `Deposited $${amount.toFixed(2)}.`;
   document.getElementById("amount").value = "";
 }
 
@@ -70,8 +70,50 @@ function withdraw() {
   currentUser.balance -= amount;
   updateBalance();
   result.style.color = "green";
-  result.textContent = `Successfully withdrew $${amount.toFixed(2)}.`;
+  result.textContent = `Withdrew $${amount.toFixed(2)}.`;
   document.getElementById("amount").value = "";
+}
+
+function transfer() {
+  const targetCard = document.getElementById("transfer-card").value.trim();
+  const amount = parseFloat(document.getElementById("transfer-amount").value);
+  const result = document.getElementById("transaction-result");
+
+  if (!targetCard || isNaN(amount) || amount <= 0) {
+    result.style.color = "red";
+    result.textContent = "Enter valid card and amount.";
+    return;
+  }
+
+  if (targetCard === currentUser.card) {
+    result.style.color = "red";
+    result.textContent = "Cannot transfer to your own account.";
+    return;
+  }
+
+  const recipient = customers.find(c => c.card === targetCard);
+  if (!recipient) {
+    result.style.color = "red";
+    result.textContent = "Recipient not found.";
+    return;
+  }
+
+  if (currentUser.balance < amount) {
+    result.style.color = "red";
+    result.textContent = "Insufficient funds for transfer.";
+    return;
+  }
+
+
+  currentUser.balance -= amount;
+  recipient.balance += amount;
+
+  updateBalance();
+  result.style.color = "green";
+  result.textContent = `Transferred $${amount.toFixed(2)} to ${recipient.name}.`;
+
+  document.getElementById("transfer-card").value = "";
+  document.getElementById("transfer-amount").value = "";
 }
 
 function logout() {
@@ -80,6 +122,8 @@ function logout() {
   document.getElementById("pin").value = "";
   document.getElementById("result").textContent = "";
   document.getElementById("amount").value = "";
+  document.getElementById("transfer-card").value = "";
+  document.getElementById("transfer-amount").value = "";
   document.getElementById("transaction-result").textContent = "";
 
   document.getElementById("transaction-area").classList.add("hidden");
