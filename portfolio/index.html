@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sowmya Reddy - Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      scroll-behavior: smooth;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #b1b3b3, #b0bfc0);
+      color: #333;
+    }
+
+    .navbar {
+      background-color: #817e7ecc;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 4px 12px rgba(170, 11, 11, 0.05);
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+      font-size: 1.5rem;
+      color: #08708a;
+      text-align: left;
+    }
+
+    section {
+      padding: 80px 0;
+    }
+
+    h2 {
+      font-weight: 900;
+      color: #0b5983;
+    }
+
+    .lead {
+      color: #292323;
+    }
+
+    .card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: none;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-img-top {
+      border-top-left-radius: 16px;
+      border-top-right-radius: 16px;
+      height: 180px;
+      object-fit: cover;
+    }
+    .projects{
+        width: 70px;
+      height: 80px;
+      margin-bottom: 150px;
+    }
+    .services img {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 15px;
+    }
+
+    .about-img {
+      max-width: 100px;
+      border-radius: 50%;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+    .sow-img{
+        max-width:200px ;
+    }
+
+    footer {
+      background-color: #0077b6;
+      color: white;
+      padding: 25px 0;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    .btn-primary {
+      background-color: #0077b6;
+      border-color: #0077b6;
+    }
+
+    .btn-primary:hover {
+      background-color: #005f8f;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">Sowmya Reddy</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Home -->
+<section id="home" class="text-center">
+  <div class="container">
+    <h1 class="display-4 fw-bold" style="color: rgb(27, 148, 148);">Welcome to My Portfolio</h1>
+    <p class="lead">Hi, I'm Sowmya Reddy – Developer, Designer & Tech Enthusiast</p>
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects" >
+  <div class="container text-center">
+    <h2 class="text-center mb-5">Projects</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS97aX6dI3-1e-M965NIk69aYgOTCvJJam6UA&s" class="card-img-top"  alt="Project 1">
+          <div class="card-body">
+            <h5 class="card-title">Project 1</h5>
+            <p class="card-text">Brief description of Project 1 with image and modern styling.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJOSPb5lxlKxSJfxajS4hc5Nk-T0au732Vqw&s" class="card-img-top" alt="Project 2">
+          <div class="card-body">
+            <h5 class="card-title">Project 2</h5>
+            <p class="card-text">A powerful web app with full responsiveness and clean UI.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4nQHLLcB-E5TJQkgyoeFpJUifUNUN3Wilvg&s" class="card-img-top" alt="Project 3">
+          <div class="card-body">
+            <h5 class="card-title">Project 3</h5>
+            <p class="card-text">Creative design and problem-solving wrapped in a real-world app.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Services -->
+<section id="services" class="bg-light services">
+  <div class="container">
+    <h2 class="text-center mb-5">Services</h2>
+    <div class="row text-center">
+      <div class="col-md-4">
+        <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" alt="Web Dev Icon">
+        <h5>Web Development</h5>
+        <p>Modern, mobile-friendly websites built with clean code and best practices.</p>
+      </div>
+      <div class="col-md-4">
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="UI UX Icon">
+        <h5>UI/UX Design</h5>
+        <p>Stunning user interfaces with seamless, intuitive interactions.</p>
+      </div>
+      <div class="col-md-4">
+        <img src="https://cdn-icons-png.flaticon.com/512/3176/3176360.png" alt="Consulting Icon">
+        <h5>Consulting</h5>
+        <p>Expert advice on web strategies, system architecture, and scaling ideas.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About Me -->
+<section id="about">
+  <div class="container text-center">
+    <h2 class="mb-4">About Me</h2>
+    <img src="https://static.vecteezy.com/system/resources/previews/000/242/488/non_2x/vector-female-developer.jpg" alt="Sowmya Reddy" class="sow-img">
+    <p class="mt-3 mx-auto" style="max-width: 700px;">
+      I'm Sowmya Reddy, passionate about building high-quality web experiences. I enjoy solving real-world problems using technology and am always eager to learn and grow in this ever-evolving tech world. Let's build something great together!
+    </p>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="bg-light">
+  <div class="container">
+  <h2 class="contact-heading" style="text-align: center;">Contact Me</h2>
+  <div class="contact-container">
+    <div class="contact-item"><strong>Name:</strong> Sowmya Reddy</div>
+    <div class="contact-item"><strong>Phone:</strong> +91-6094678992</div>
+    <div class="contact-item">
+      <strong>Email:</strong>
+      <a href="https://mail.google.com/mail/u/0/#inbox">23r11a6705@gcet.edu.in</a>
+    </div>
+    <div class="contact-item">
+      <strong>GitHub:</strong>
+      <a href="https://github.com/sowmyareddy705" target="_blank">https://github.com/sowmyareddy705
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center">
+  <div class="container">
+    <p>&copy; 2025 Sowmya Reddy. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
