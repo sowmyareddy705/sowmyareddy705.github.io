@@ -7,5 +7,7 @@
 			"path": "../a1"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "sowmyareddy705.github.io"
+	}
 }
